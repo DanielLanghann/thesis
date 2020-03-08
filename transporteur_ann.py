@@ -1,8 +1,8 @@
 # Transporteur ANN
 
 # Working Directory
-import os
-os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
+# import os
+# os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
 
 # 1 Import Bibliotheken
 import numpy as np
