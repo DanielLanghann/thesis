@@ -46,7 +46,7 @@ classifier.add(Dense(units = 143, kernel_initializer = 'uniform', activation = '
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 # Fitting ANN
 now1 = dt.now().timestamp()
-classifier.fit(X_train, y_train, batch_size = 10, nb_epoch = 15)
+classifier.fit(X_train, y_train, batch_size = 10, epochs = 15)
 now2 = dt.now().timestamp()
 timediff = now2-now1
 
