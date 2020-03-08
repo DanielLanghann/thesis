@@ -52,7 +52,7 @@ y_pred = classifier.predict(X_test)
 y_pred = (y_pred > 0.5)
 
 # 8 Datenauswertung
-
+# CM pro Transporteur
 cm1     = confusion_matrix(y_test[:,0], y_pred[:,0])
 cm2     = confusion_matrix(y_test[:,1], y_pred[:,1])
 cm3     = confusion_matrix(y_test[:,2], y_pred[:,2])
@@ -70,6 +70,7 @@ cm14    = confusion_matrix(y_test[:,13], y_pred[:,13])
 cm15    = confusion_matrix(y_test[:,14], y_pred[:,14])
 cm16    = confusion_matrix(y_test[:,15], y_pred[:,15])
 
+# Accuracy-Rate pro Transporteur
 accuracy_rate01 = (cm1[0,0]+cm1[1,1])/2000
 accuracy_rate02 = (cm2[0,0]+cm2[1,1])/2000
 accuracy_rate03 = (cm3[0,0]+cm3[1,1])/2000
