@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan 24 14:27:09 2020
-
-@author: Daniel Langhann
-"""
-
-""" ---- Auftragsdaten Random Forest Regression --- """
+# Ermittlung von LHM aus Basis von Sendungsdaten Random Forest
 
 # Working Directory
-import os
-os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\data')
+# import os
+# os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\data')
 
 # 1 Import Bibliotheken
 import numpy as np
