@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan 24 14:27:09 2020
-
-@author: Daniel Langhann
-"""
-
-""" ---- Auftragsdaten Multiple Lineare Regression --- """
+# Ermittlung von LHM aus Sendungsdaten MLR
 
 # Working Directory
-import os
-os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\data')
+# import os
+# os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\data')
 
 # 1 Import Bibliotheken
 import numpy as np
@@ -53,8 +46,6 @@ for i in range(0,len(y_pred)):
         if y_pred[i,j] < 0:
             y_pred[i,j] = 0
             
-# 8 Datenauswertung
-
 # 8 Datenauswertung
 
 """ Labels """
