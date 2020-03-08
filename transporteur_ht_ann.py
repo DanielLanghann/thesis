@@ -19,7 +19,7 @@ import seaborn as sns
 
 
 # 2 Datenimport
-dataset = pd.read_csv('auftragnehmer_ht.csv')
+dataset = pd.read_csv('transporteur_ht.csv')
 
 # 3 Aufteilung in X,y
 X = dataset.iloc[:,0:68].values
