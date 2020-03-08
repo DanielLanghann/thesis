@@ -1,8 +1,8 @@
 # Transporteur HT ANN
 
 # Working Directory
-import os
-os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
+# import os
+# os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
 
 # 1 Import Bibliotheken
 import numpy as np
@@ -68,20 +68,3 @@ sns.despine(left=True)
 # Plot a simple histogram with binsize determined automatically
 ax = sns.distplot(auftraege, kde=False, color="b")
 ax.set_xlabel('Aufträge pro Fahrzeug')
-
-
-cm1     = confusion_matrix(y_test[:,0], y_pred[:,0])
-
-accuracy = np.array([0.9926, 0.9943, 0.9948,0.9950,0.9952,0.9953,0.9954,0.9955,
- 0.9955,0.9955,0.9956,0.9956,0.9957,0.9957,0.9957,0.9958,
- 0.9958,0.9958,0.9959,0.9958])
-
-accuracy.size
-x = np.array([5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100])
-
-plt.plot(accuracy, c='royalblue', ls = '--', marker = 's', ms = 7, label="Accuracy-Rate")
-plt.legend(loc = 'upper_left', bbox_to_anchor=(1,1))
-plt.xticks(list(range(0,20)),x, rotation = 'horizontal')
-plt.xlabel("Anzahl Epochs")
-plt.ylabel("%")  
-plt.show()
