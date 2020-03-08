@@ -56,7 +56,6 @@ y_pred = (y_pred > 0.5)
 y_pred = y_pred.astype(int)
 
 # 8 Datenauswertung
-
 df = pd.DataFrame(y_test)
 df.hist()
 
