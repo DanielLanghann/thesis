@@ -1,8 +1,8 @@
-# Distributions-Art K-Nearest Neighbor
+# Distributions-Art kNN
 
 # Working Directory
-import os
-os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
+# import os
+# os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
 
 # 1 Import Bibliotheken
 import pandas as pd
@@ -194,7 +194,3 @@ ax.set_xticklabels(labels)
 ax.legend(loc = 'center left', bbox_to_anchor=(1, 0.5))
 autolabel(barchart_dk)
 plt.show()
-
-
-
-
