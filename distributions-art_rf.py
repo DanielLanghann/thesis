@@ -1,8 +1,8 @@
 # Distributions-Art Random Forest
 
 # Working Directory
-import os
-os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
+# import os
+# os.chdir('C:\\Users\\Daniel Langhann\\OneDrive\\Uni\\Thesis\\Data')
 
 # 1 Import Bibliotheken
 
@@ -16,7 +16,6 @@ from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 
 # 2 Datenimport
-
 dataset = pd.read_csv('distributions-art.csv')
 
 # 3 Aufteilung in X,y
