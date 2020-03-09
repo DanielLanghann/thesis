@@ -29,8 +29,8 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # 6 Fitting Multiple Random Forest
-now1 = dt.now().timestamp()
 from sklearn.ensemble import RandomForestRegressor
+now1 = dt.now().timestamp()
 regressor = RandomForestRegressor(n_estimators=150, random_state=0)
 regressor.fit(X_train,y_train)
 now2 = dt.now().timestamp()
