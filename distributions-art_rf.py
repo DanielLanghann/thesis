@@ -11,7 +11,6 @@ import numpy as np
 from datetime import datetime as dt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 
@@ -37,6 +36,7 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # 6 Fitting RF
+from sklearn.ensemble import RandomForestClassifier
 now1 = dt.now().timestamp()
 classifier = RandomForestClassifier(n_estimators=150, random_state = 0)
 classifier.fit(X_train, y_train_lcl_lkw)
