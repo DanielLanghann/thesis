@@ -10,7 +10,6 @@ import numpy as np
 from datetime import datetime as dt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 
@@ -36,6 +35,7 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # 6 Fitting kNN
+from sklearn.neighbors import KNeighborsClassifier
 now1 = dt.now().timestamp()
 classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
 classifier.fit(X_train, y_train_lcl_lkw)
