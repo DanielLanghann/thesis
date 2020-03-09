@@ -29,8 +29,8 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # 6 Fitting Multiple Linear Regression
-now1 = dt.now().timestamp()
 from sklearn.linear_model import LinearRegression
+now1 = dt.now().timestamp()
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
 now2 = dt.now().timestamp()
