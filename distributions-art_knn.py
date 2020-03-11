@@ -8,7 +8,6 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime as dt
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
@@ -24,12 +23,14 @@ X = dataset.iloc[:,0:8].values
 y_lcl_lkw = dataset.iloc[:,8].values
 
 # 4 Splitting - Training-Set / Test-Set
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train_lcl_lkw, y_test_lcl_lkw = train_test_split(
     X, y_lcl_lkw,
     test_size = 0.20, 
     random_state = 0)
 
 # 5 Feature Scaling
+from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
